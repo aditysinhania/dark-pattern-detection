@@ -1,0 +1,80 @@
+/* Dark Pattern Detector Styles */
+
+.dark-pattern-highlight {
+  background-color: rgba(255, 255, 0, 0.3);
+  border-bottom: 2px solid #ff6b35;
+  padding: 2px 0;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.dark-pattern-highlight:hover {
+  background-color: rgba(255, 255, 0, 0.6);
+}
+
+/* Specific pattern types */
+.dark-pattern-false_urgency {
+  border-bottom-color: #ff6b35;
+}
+
+.dark-pattern-false_scarcity {
+  border-bottom-color: #f7931e;
+}
+
+.dark-pattern-confirmshaming {
+  border-bottom-color: #e4007c;
+}
+
+.dark-pattern-trick_wording {
+  border-bottom-color: #9c27b0;
+}
+
+.dark-pattern-hidden_costs {
+  border-bottom-color: #3f51b5;
+}
+
+.dark-pattern-forced_action {
+  border-bottom-color: #009688;
+}
+
+.dark-pattern-subscription_trap {
+  border-bottom-color: #607d8b;
+}
+
+.dark-pattern-preselected_checkbox {
+  border-bottom-color: #795548;
+}
+
+.dark-pattern-ui_attention_brightness {
+  border-bottom-color: #ff9800;
+}
+
+/* Notification styles */
+.dark-pattern-notification {
+  color: white;
+  font-weight: bold;
+}
+
+.dark-pattern-success {
+  background-color: #4caf50;
+}
+
+.dark-pattern-info {
+  background-color: #2196f3;
+}
+
+.dark-pattern-warning {
+  background-color: #ff9800;
+}
+
+.dark-pattern-error {
+  background-color: #f44336;
+}
+
+/* Hide notification on small screens if needed */
+@media (max-width: 600px) {
+  .dark-pattern-notification {
+    max-width: 250px;
+    font-size: 12px;
+  }
+}
